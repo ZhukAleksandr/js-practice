@@ -536,10 +536,156 @@
 // Да, задача сложнее, но она просто объединяет все то, что мы уже учили.
 
 
-const userName = prompt('Input name', '');
-function returnStrict(userName) {
-    return  ('Hello, ' + userName);
-}
-returnStrict();
-alert(returnStrict(userName));
+// const userName = prompt('Input name', '');
+// function returnStrict(userName) {
+//     return  ('Hello, ' + userName);
+// }
+// returnStrict();
+// alert(returnStrict(userName));
 
+// function getMathResult(num, times) {
+//     if (typeof(times) !== 'number' || times <= 0) {
+//         return num;
+//     }
+
+//     let str = '';
+
+//     for (let i = 1; i <= times; i++) {
+//         if (i === times) {
+//             str += `${num * i}`;
+//         } else {
+//             str += `${num * i}---`;
+//         }
+//     }
+
+//     return str;
+// }
+// getMathResult(10, 5);
+
+// let a = 1;
+
+// switch (a) {
+//     case 1: 
+//     case 2: console.log('Two'); break;
+//     case 3: console.log('Three');
+//     default: console.log('Wrong answer');
+// }
+
+// let i = 0;
+// while (++i < 5) {alert( i )};
+
+// for (let i = 2; i <= 10; i++) {
+//     if (i % 2 === 0 ){
+//     console.log(i);
+//     }
+// } 
+
+// for (let i = 0; i < 3; i++) {
+//     alert( `number ${i}!` );
+//     }
+
+// let i = 0;
+// while (i++ < 3) console.log( `number ${i}!` ); 
+
+
+
+
+// let n = +prompt ('Number of reapeats', '');
+
+// nextPart: for (let i = 2; i <= n; i++) {
+    
+//     for (let j = 2; j < i; j++) {
+//         if (i % j == 0) continue nextPart ;
+//     }
+//         alert(i);
+        
+    
+// } 
+
+
+// Реши эти задачи через цикл for.
+// 1)Выведите столбец чисел от 1 до 100.
+// for (i = 0; i <= 100; i++) {
+
+//     if (i % 2 == 0 && i !== 0) {    
+//     console.log(i); 
+//     }
+// }      
+// 2)Выведите столбец чисел от 11 до 33.
+// 3)Выведите столбец четных чисел в промежутке от 0 до 100.
+// 4)С помощью цикла найдите сумму чисел от 1 до 100.
+
+// for (i = 1; i <= 100; i++) {
+    
+//     console.log(i); 
+//     }
+
+
+// nextPart: for (let i = 1; i <= 100; i++) {
+    
+//         for (let j = 2; j < i ; j++) {
+//             if (i % j == 0) continue nextPart ;
+//         }
+//             console.log(i);           
+        
+//     } 
+    
+    // let sum = 0;
+    // for (let i = 1; i <= 100; i++) {
+    //     sum += i;      
+    // }
+    // console.log(sum);
+    
+let num = 4;
+switch (num) {
+    case 1: console.log('Winter'); break;
+    case 2: console.log('Spring'); break;
+    case 3: console.log('Summer'); break;
+    case 4: console.log('Autumn'); break;
+    default: console.log('No match');
+}    
+
+// function abc() {
+//     console.log('f');
+// }
+// abc();
+
+// function checkAge(age) {
+//     if (age > 18) {
+//     return true;
+//     } else {
+//     return confirm('Родители разрешили?');
+//     }
+// }
+// function checkAge(age) {
+//     return (age > 18) ? true : confirm('ParentsWereConfirmed');
+// }
+// function checkAge(age) {
+//     return (age > 18) || confirm('ParentsWereConfirmed');
+// }
+
+// function pow(x, n) {
+//     let result = x;
+//     for (let i = 1; i < n; i++) {
+//         result *= x;
+//     }
+//     return result;
+// }
+// let x = +prompt('input x', '');
+// let n = +prompt('input n', '');
+// if (n < 1) {
+//     alert('степень ${n} не поддерживается, введите натуральное число');
+// } else {
+//     alert( pow(x, n) );
+// }
+
+
+function ask(question, yes, no) {
+    if (confirm(question)) yes()
+    else no();
+    }  
+    ask(
+    "Вы согласны?",
+    () => alert("Вы согласились."),
+    () => alert("Вы отменили выполнение.")
+    );
