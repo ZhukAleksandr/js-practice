@@ -439,7 +439,7 @@
 //     alert ("wrong answer");
 // }
 
-// 1)Если переменная a больше нуля и меньше 5-ти, то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при a, равном 5, 0, -3, 2.
+
 
 // let a = prompt('Input the number', '');
 
@@ -451,7 +451,6 @@
 
 
 
-// 2)Если переменная a равна нулю или равна двум, то прибавьте к ней 7, иначе поделите ее на 10. Выведите новое значение переменной в консоль. Проверьте работу скрипта при a, равном 5, 0, -3, 2.
 
 // a = 2;
 
@@ -464,8 +463,6 @@
 
 
 
-// 3)Если переменная a равна или меньше 1, а переменная b больше или равна 3, то выведите сумму этих переменных, иначе выведите их разность (результат вычитания). Проверьте работу скрипта при a и b, равном 1 и 3, 0 и 6, 3 и 5.
-
 // let a = +prompt('Input a', '');
 // let b = +prompt('Input b', '');
 
@@ -477,7 +474,7 @@
 
 
 
-// 4)Если переменная a больше 2-х и меньше 11-ти, или переменная b больше или равна 6-ти и меньше 14-ти, то выведите 'Верно', в противном случае выведите 'Неверно'.
+
 
 // let a = +prompt('Input a', '');
 // let b = +prompt('Input b', '');
@@ -501,7 +498,6 @@
 
 // 1) Создайте функцию, которая будет на вход принимать 1 аргумент с именем человека и возвращать строку.
 
-// Пример: вызов функции sayHello('Антон') возвращает строку "Привет, Антон!". В решении вызывать функцию не нужно, программа сделает это за вас.
 
 // P.S. возвращать - это использовать ключевое слово return.
 
@@ -509,13 +505,6 @@
 
 
 
-// 2) Создайте функцию, которая принимает в себя 1 аргумент в виде целого числа и возвращает массив из трех чисел: одно на 1 меньше, сам аргумент, и число на 1 больше.
-
-// Пример: вызов функции returnNeighboringNumbers(5) возвращает массив в виде [4, 5, 6].
-
-// 3) Создайте функцию, которая будет принимать в себя 2 аргумента, оба числа. Первое число - это база, второе число - это сколько раз нужно будет повторить это число в прогрессии. (Смотри пример ниже). Функция должна возвращать строку (или число в особых случаях, о которых ниже), где эти числа идут по порядку, разделенные тремя дефисами "---". После последнего числа их не должно быть.
-
-// Если второй аргумент не является числом, равен или меньше нуля - то возвращать просто первый аргумент. (Проверяем через оператор typeof)
 
 // Примеры:
 
@@ -531,7 +520,7 @@
 
 // Вызов функции getMathResult(20, -5) даст ответ 20
 
-// Эта задача уже ближе к реальности, когда вам нужно учитывать и тип данных у аргументов, проверять их и продумывать логику работы внутри. Обратите внимание на прогрессию, она рассчитывается по простой формуле умножения. Если первый аргумент 5, а второй 3, то число повторяется 3 раза, каждый раз увеличиваясь на само себя. Это базовая математика, которая и нужна для работы в 95% случае на фронтенде.
+
 
 // Да, задача сложнее, но она просто объединяет все то, что мы уже учили.
 
@@ -636,14 +625,14 @@
     // }
     // console.log(sum);
     
-let num = 4;
-switch (num) {
-    case 1: console.log('Winter'); break;
-    case 2: console.log('Spring'); break;
-    case 3: console.log('Summer'); break;
-    case 4: console.log('Autumn'); break;
-    default: console.log('No match');
-}    
+// let num = 4;
+// switch (num) {
+//     case 1: console.log('Winter'); break;
+//     case 2: console.log('Spring'); break;
+//     case 3: console.log('Summer'); break;
+//     case 4: console.log('Autumn'); break;
+//     default: console.log('No match');
+// }    
 
 // function abc() {
 //     console.log('f');
@@ -680,12 +669,372 @@ switch (num) {
 // }
 
 
-function ask(question, yes, no) {
-    if (confirm(question)) yes()
-    else no();
-    }  
-    ask(
-    "Вы согласны?",
-    () => alert("Вы согласились."),
-    () => alert("Вы отменили выполнение.")
-    );
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+//     }  
+//     ask(
+//     "Вы согласны?",
+//     () => alert("Вы согласились."),
+//     () => alert("Вы отменили выполнение.")
+//     );
+
+//     создать функцию которая будет выводить 10 четных чисел в консоль
+
+    // function showEvenNums() {       
+        
+    // for (let i = 2;; i++) {
+    //     let result = [];
+    //     if (i % 2 == 0) {
+    //     for (let j = 1; j = 10; j++) {             
+    //             result = i + j;
+    //         }                
+    //     }
+    // }
+    // console.log(showEvenNums());
+    // }
+    // function getFirstEvenNumbers(count) { 
+    //         let result = [];        
+    //     for (i = 2; i == 10; i += 2) { 
+    //         result.push(i); 
+    //     } 
+    //     return result; 
+    //     }        
+    //     let evens = getFirstEvenNumbers(10); 
+    //     console.log(evens.join('\n')); 
+
+
+    // function getFirstEvenNumbers(count) {        
+    //     let result = [];         
+    //     for (let i = 2; i <= count * 2; i += 2) { 
+    //     result.push(i); 
+    //     } 
+    //     return result; 
+    //     }        
+    //     let evens = getFirstEvenNumbers(10); 
+    //     console.log(evens.join('\n')); 
+
+
+    // function getFirstEvenNumbers(count){        
+                
+    //     for (let i = 2; i <= count * 2; i += 2) {
+    //         (console.log(i));        
+    //         }             
+    //     } 
+        
+    //     getFirstEvenNumbers(10);
+
+//     function findNextSquare(sq) {
+//             let n = (sq ** (1/2));            
+//             if ((sq % n) == 0) {            
+//             return ++n * n;
+//         } else {
+//             return ('-1');
+//         }        
+//     }     
+//     console.log(findNextSquare(8649));    
+    
+
+// let sum = (a, b) => a + b;
+// console.log(sum(4, 5));
+
+
+
+
+
+// function sum (a, b) {   
+// }
+// console.log(sum(1));
+
+// for(let i = 1; i <= 4; i++){
+//     console.log(i);
+// }
+
+// let a = 4;
+// console.log(++a);
+// console.log(a++);
+// console.log(a);
+
+
+// console.log(5 == true);
+
+// let age = 18;
+// age >= 18 ? console.log("ok") : console.log("bye");
+
+// if(age >= 18) {
+//     console.log("ok");
+// } else {
+//     console.log("bye");
+// }
+
+// console.log(typeof null);
+
+// 2 && 3 && 4;
+// 2 || 3 || 4;
+// 2 || 3 && 4;
+// 2 && 3 || 4;
+// "pasha" || 0;
+// "pasha" && 0;
+// 0 && "pasha";
+// 0 || "pasha";
+// null || 7 && -4;
+// null && 7 || -4;
+// null && !7 || -4;
+
+// switch ('2') {
+//     case 1: 
+//     case 2: console.log('2');break;
+//     case 3: console.log('3'); 
+//     default: console.log('ok');   
+// }
+
+// console.log(a);
+// let a = 4;
+
+
+// const str = "Tests";
+// // const arr = [1, 2 ,4];
+
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+// console.log(str);
+
+// const fruit = "Some fruit";
+
+// const logg = "Hello world";
+// console.log(logg.substring('6, 5'));
+
+// const num = 12.2;
+// console.log(Math.round(num));
+
+// const test = "12.2px";
+// console.log(parseFloat(test));
+
+// function ucFirst(str) {
+//     if (!str) return str;
+
+//     return str[0].toUpperCase() + str.slice(1);
+// }
+// console.log(ucFirst('вася'));
+
+// Напишите функцию checkSpam(str), возвращающую true, если str содержит 'viagra' или 'XXX', а иначе false.
+
+// Функция должна быть нечувствительна к регистру:
+
+// function checkSpam(str) {
+//     let result = str.toLowerCase();
+//     return result.includes("viagra") || result.includes("xxx");
+// }            
+// console.log(checkSpam('buy ViAgRA now'));
+// console.log(checkSpam('free xxxxx'));
+// console.log(checkSpam("innocent rabbit"));
+
+
+
+// function truncate(str, maxLength) {
+//     if (str.length > maxLength) {
+//     return str.slice(0, maxLength - 1) + "…";
+//     } else {
+//         return str;
+//     }    
+// }
+// console.log(truncate("Вот, что мне хотелось бы сказать на эту тему:", 20));
+// console.log(truncate("Всем привет!", 20));
+
+//Усечение строки
+// const truncate = (str, maxlength) => str.length > maxlength ? str.slice(0, maxlength - 1) + "…" : str;
+// console.log(truncate("Вот, что мне хотелось бы сказать на эту тему:", 20));
+// console.log(truncate("Всем привет!", 20));
+
+// function extractCurrencyValue(str) {    
+//     return str.slice(1);    
+// } 
+// console.log(extractCurrencyValue('$120'));
+
+
+// let user = {
+//     name: John,
+//     surname: Smith,    
+// };
+// name = 'Pete';
+// delete user.name;
+
+
+// function isEmpty(obj) {
+//     for(let key in obj) {
+//         return false;
+//     }    
+//     return  true;   
+// }
+// console.log(isEmpty(''));
+
+// let salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 130
+// };
+// let sum = 0;
+//     for( let key in salaries) {
+//         sum += salaries[key];
+//     }
+// console.log(sum);
+
+// let menu = {
+//     width: 200,
+//     height: 300,
+//     title: "My menu",    
+// };
+//     function multiplyNumeric(menu) {
+//         for( let key in menu) {
+//             if (typeof menu[key] == 'number') {
+//                 menu[key] *= 2;
+//             }                  
+//         }
+//         return menu;
+//     }
+// console.log(multiplyNumeric(menu));
+
+
+// Создайте объект obj. Выведите в консоль элемент с ключом 'c' двумя способами: через квадратные скобки и как свойство объекта:
+
+// let obj = {
+//     a: 1,
+//     b: 2,
+//     c: 3
+// };
+// console.log(obj['c']);
+// console.log(obj.c);
+
+// 2)Создайте массив заработных плат obj. Выведите в консоль зарплату Пети и Коли.
+// let obj = {Коля: '1000', Вася: '500', Петя: '200'};
+
+
+// let obj = {Коля: '1000', Вася: '500', Петя: '200'};
+// console.log( obj['Петя'], obj['Коля'] );
+
+// 3)Создайте объект с днями недели. Ключами в нем должны служить номера дней от начала недели (понедельник - первый и т.д.). Выведите в консоль текущий день недели.
+
+// let week = {
+//     first : 'Monday',
+//     second: 'Tuesday',
+//     third: 'Wednesday',
+//     fourth: 'Thursday',
+//     fifth: 'Friday',
+//     sixth: 'Saturday',
+//     seventh: 'Sunday',
+// };
+// console.log(week.second);
+
+// 4)Пусть теперь номер дня недели хранится в переменной day, например там лежит число 3. Выведите день недели, соответствующий значению переменной day.
+
+// let week = {
+//     1: 'Monday',
+//     2: 'Tuesday',
+//     3: 'Wednesday',
+//     4: 'Thursday',
+//     5: 'Friday',
+//     6: 'Saturday',
+//     7: 'Sunday',
+// };
+// let day = 3;
+// console.log(week[day]);
+
+// let calculator = {
+//     sum (a, b) {
+//         return this.a + this.b;
+//     },
+//     mul (a, b) {
+//         return this.a * this.b;
+//     },
+//     read (a, b) {
+//         this.a = +prompt("a?", '');
+//         this.b = +prompt("b?", '');
+//     },
+//     };  
+//     calculator.read();
+//     alert( calculator.sum() );
+//     alert( calculator.mul() );
+
+/* Задание на урок:
+
+1) Первую часть задания повторить по уроку
+
+2) Создать функцию showMyDB, которая будет проверять свойство privat. Если стоит в позиции
+false - выводит в консоль главный объект программы
+
+3) Создать функцию writeYourGenres в которой пользователь будет 3 раза отвечать на вопрос 
+"Ваш любимый жанр под номером ${номер по порядку}". Каждый ответ записывается в массив данных
+genres
+
+P.S. Функции вызывать не обязательно*/
+// Код возьмите из предыдущего домашнего задания
+
+let numberOfFilms;
+
+function start() {
+    numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+        numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+    }
+}
+
+start();
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+
+function rememberMyFilms() {
+    for (let i = 0; i < 2; i++) {
+        const a = prompt('Один из последних просмотренных фильмов?', ''),
+              b = prompt('На сколько оцените его?', '');
+    
+        if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+            personalMovieDB.movies[a] = b;
+            console.log('done');
+        } else {
+            console.log('error');
+            i--;
+        }
+    }
+}
+rememberMyFilms();
+
+
+function detectPersonalLevel() {
+    if (personalMovieDB.count < 10) {
+        console.log("Просмотрено довольно мало фильмов");
+    } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+        console.log("Вы классический зритель");
+    } else if (personalMovieDB.count >= 30) {
+        console.log("Вы киноман");
+    } else {
+        console.log("Произошла ошибка");
+    }
+}
+detectPersonalLevel();
+
+function showMyDB(hidden) {
+    if (!hidden) {
+        console.log(personalMovieDB);
+
+    }
+}
+
+showMyDB(personalMovieDB.privat);
+
+
+function writeYourGenres() {
+    for (let i = 1; i <= 3; i++) {
+        const genre = prompt(`Your favourite genre? ${i}`);
+        personalMovieDB.genres[i-1] = genre;
+    }
+};
+writeYourGenres();
+console.log(personalMovieDB);
