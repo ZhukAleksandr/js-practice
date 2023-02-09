@@ -937,6 +937,7 @@
 //     7: 'Sunday',
 // };
 // let day = 3;
+
 // console.log(week[day]);
 
 // let calculator = {
@@ -969,72 +970,170 @@ genres
 P.S. Функции вызывать не обязательно*/
 // Код возьмите из предыдущего домашнего задания
 
-let numberOfFilms;
+// let numberOfFilms;
 
-function start() {
-    numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+// function start() {
+//     numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
-        numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
-    }
-}
+//     while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+//         numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+//     }
+// }
 
-start();
+// start();
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
 
 
-function rememberMyFilms() {
-    for (let i = 0; i < 2; i++) {
-        const a = prompt('Один из последних просмотренных фильмов?', ''),
-              b = prompt('На сколько оцените его?', '');
+// function rememberMyFilms() {
+//     for (let i = 0; i < 2; i++) {
+//         const a = prompt('Один из последних просмотренных фильмов?', '').trim(),
+//               b = prompt('На сколько оцените его?', '');
     
-        if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-            personalMovieDB.movies[a] = b;
-            console.log('done');
-        } else {
-            console.log('error');
-            i--;
-        }
-    }
-}
-rememberMyFilms();
+//         if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+//             personalMovieDB.movies[a] = b;
+//             console.log('done');
+//         } else {
+//             console.log('error');
+//             i--;
+//         }
+//     }
+// }
+// rememberMyFilms();
 
 
-function detectPersonalLevel() {
-    if (personalMovieDB.count < 10) {
-        console.log("Просмотрено довольно мало фильмов");
-    } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
-        console.log("Вы классический зритель");
-    } else if (personalMovieDB.count >= 30) {
-        console.log("Вы киноман");
-    } else {
-        console.log("Произошла ошибка");
-    }
-}
-detectPersonalLevel();
+// function detectPersonalLevel() {
+//     if (personalMovieDB.count < 10) {
+//         console.log("Просмотрено довольно мало фильмов");
+//     } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+//         console.log("Вы классический зритель");
+//     } else if (personalMovieDB.count >= 30) {
+//         console.log("Вы киноман");
+//     } else {
+//         console.log("Произошла ошибка");
+//     }
+// }
+// detectPersonalLevel();
 
-function showMyDB(hidden) {
-    if (!hidden) {
-        console.log(personalMovieDB);
+// function showMyDB(hidden) {
+//     if (!hidden) {
+//         console.log(personalMovieDB);
 
-    }
-}
+//     }
+// }
 
-showMyDB(personalMovieDB.privat);
+// showMyDB(personalMovieDB.privat);
 
 
-function writeYourGenres() {
-    for (let i = 1; i <= 3; i++) {
-        const genre = prompt(`Your favourite genre? ${i}`);
-        personalMovieDB.genres[i-1] = genre;
+// function writeYourGenres() {
+//     for (let i = 1; i <= 3; i++) {        
+//         personalMovieDB.genres[i-1] = prompt(`Your favourite genre? ${i}`);
+//     }
+// };
+// writeYourGenres();
+// console.log(personalMovieDB);
+
+
+// function first() {
+//     //Do something
+//     setTimeout(function() {
+//         console.log(1);    
+//     }, 500);
+// }
+
+// function second() {
+//     console.log(2);
+// }
+
+// first();
+// second();
+
+// function learnJS(lang, callback) {
+//     console.log(`I'm learning: ${lang}`);
+//     callback();
+// }
+
+// function done() {
+//     console.log('I have finished  lesson');
+// }
+
+// learnJS('JavaScript', done);
+
+
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: "black",
+        bg: 'red',
+    },
+    makeTest: function() {
+        console.log('Test');
     }
 };
-writeYourGenres();
-console.log(personalMovieDB);
+options.makeTest();
+// console.log(Object.keys(options).length);
+
+const {border, bg} = options.colors;
+console.log(border);
+
+// console.log(options.name);
+
+// delete options.name;
+// console.log(options);
+
+
+for (let key in options) {
+    if (typeof(options[key]) === 'object') {
+        for (let i in options[key]) {
+            console.log(`Property ${i} has a value ${options[key][i]}`);
+            
+        }
+    } else {
+        console.log(`Property ${key} has a value ${options[key]}`);
+        
+    }    
+}
+
+
+const arr = [2, 13, 26, 6, 8];
+arr.sort(compareNum);
+console.log(arr);
+
+function compareNum(a, b) {
+    return a - b;
+}
+// arr[99] = 0;
+// console.log(arr.length);
+// arr.pop();
+// arr.forEach(function(item, i, arr) {
+//     console.log(`${i}: ${item} inside massiv ${arr}`);
+// });
+
+
+// arr.push(11);
+// console.log(arr);
+
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+// for (let value of arr) {
+//     console.log(value);
+// }
+
+// const str = prompt('', '');
+// const products = str.split(', ');
+// console.log(products);
+
+// const str = prompt('', '');
+// const products = str.split(', ');
+// products.sort();
+// console.log(products.join('; '));
